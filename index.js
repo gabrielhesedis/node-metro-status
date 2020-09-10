@@ -35,21 +35,7 @@ app.get('/metro', (req, res) => {
             status: situacao
           });
         });
-
-        retorno.status.push({
-          nome_completo: "Linha 11 - Coral",
-          numero: "11",
-          cor: "Coral",
-          status: "Linha Parada"
-        });
-
-        retorno.status.push({
-          nome_completo: "Linha XPTO - XYZ",
-          numero: "20",
-          cor: "Marrom",
-          status: "Linha Parada"
-        });
-
+        
         res.status(200).send(retorno);
       });
     });
